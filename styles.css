@@ -1,0 +1,34 @@
+* {
+    /* border: solid 1px black */
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    background: lightslategray;
+    padding-right: 3rem;
+    padding-left: 1rem;
+}
+
+.logo {
+    align-self: stretch;
+    flex: content;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-weight: bold;
+}
+
+li {
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
