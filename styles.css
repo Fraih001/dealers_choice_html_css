@@ -8,29 +8,29 @@ body {
 }
 
 .nav {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
     margin: 0;
     padding: 0;
     display: flex;
     list-style: none;
     justify-content: flex-end;
-    background: lightslategray;
-    padding-right: 3rem;
-    padding-left: 1rem;
+    background: #5E8FAD;
 }
 
 .logo {
     align-self: stretch;
     flex: content;
     padding: 1rem;
-    padding-left: 2rem;
+    padding-left: 3rem;
     padding-right: 2rem;
     font-weight: bold;
 }
 
 li {
-    padding: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding: 1rem 4rem 1rem 1rem;
 }
 
 .carousel {
@@ -46,7 +46,7 @@ li {
 }
 
 .navsquares div {
-    border: 3px black solid;
+    border: 1px black solid;
     padding: 100px;
     margin-left: 30px;
     margin-top: 100px;
@@ -55,23 +55,43 @@ li {
 
 .featured {
     display: flex;
-    justify-content: center;
-    background-color: lightslategray
+    flex-direction: column;
+    align-items: center;
+    background-color: #BEE8F8
 }
 
 .featuredPic {
+    background-image: url("https://images.unsplash.com/photo-1615297658577-dc5cec88e81a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YXVkaW8lMjBlcXVpcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60");
+    background-size: cover;
     padding: 200px;
     padding-right: 400px;
     padding-left: 400px;
-    border: 3px solid black;
-    margin: 100px;
-
+    margin: 50px 50px 40px 50px;
 }
+
+.featuredText {
+    border: solid 1px black;
+    text-align: center;
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 50px;
+    width: 350px;
+}
+
+#featureTitle {
+    font-weight: bolder;
+    padding: 1px 1px 5px 1px;
+}
+
+#featureInfo {
+    padding: 1px 1px 1px 1px;
+} 
 
 .footer {
     margin: 0;
-    padding: 15px;
+    padding: 10px;
     display: flex;
     list-style: none;
     justify-content: center;
+    font-size: smaller;
 }
