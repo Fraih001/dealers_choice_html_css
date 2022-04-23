@@ -32,3 +32,46 @@ li {
     padding-left: 3rem;
     padding-right: 3rem;
 }
+
+.carousel {
+    background-image: url("https://images.unsplash.com/photo-1618609377864-68609b857e90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1828&q=80");
+    height: 450px
+}
+
+.navsquares {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navsquares div {
+    border: 3px black solid;
+    padding: 100px;
+    margin-left: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px; 
+}
+
+.featured {
+    display: flex;
+    justify-content: center;
+    background-color: lightslategray
+}
+
+.featuredPic {
+    padding: 200px;
+    padding-right: 400px;
+    padding-left: 400px;
+    border: 3px solid black;
+    margin: 100px;
+
+}
+
+.footer {
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
