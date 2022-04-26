@@ -1,5 +1,5 @@
 * {
-    /* border: solid 1px black */
+    border: solid 1px black
 }
 
 body {
@@ -97,6 +97,8 @@ li {
 
 .featuredPic {
     margin: 50px 50px 40px 50px;
+    border-radius: 50%;
+    max-width: 50%;
 }
 
 .featuredText {
@@ -141,7 +143,7 @@ li {
         overflow: hidden;
         position: sticky;
         opacity: .9;
-        width: 100%;
+        width: auto;
         top: 0;
         margin: 0;
         padding: .5rem;
@@ -167,10 +169,6 @@ li {
     li {
         padding: 1rem 3rem 1rem 3rem;
         font-weight: bold;
-    }
-
-    .featuredPic {
-        max-width: 50%
     }
     
 }
