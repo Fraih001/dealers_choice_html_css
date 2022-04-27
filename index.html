@@ -36,6 +36,17 @@
  <div class="footer">
    Copyright 2022 - Fraiha Audio / Visual
  </div>
+
+<script>
+    const ul = document.getElementByTagName("ul");
+    const scrollPosition = window.scrollY;
+        if (scrollPosition > 65) {
+            ul.classList.add("active");
+        } else {
+            ul.classList.remove("active");
+        }
+</script>
+
 </body>
     </html>
 

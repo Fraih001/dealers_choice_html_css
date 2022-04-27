@@ -1,5 +1,5 @@
 * {
-    border: solid 1px black
+    /* border: solid 1px black */
 }
 
 body {
@@ -23,6 +23,15 @@ body {
     color: white;
 }
 
+ul {
+    transform: translateY(-4em);
+    transition: transform 0.5s;
+}
+
+ul:hover {
+    transform: translateY(0);
+}
+
 .logo {
     padding: 1rem 3rem 1rem 3rem;
     font-weight: bold;
@@ -34,9 +43,13 @@ li {
     font-weight: bold;
 }
 
+/* li:hover {
+    box-shadow: inset 0 0 0 1000px rgba(32, 56, 86, 0.2);
+} */
+
 .carousel {
     background-image: url("https://images.unsplash.com/photo-1618609377864-68609b857e90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1828&q=80");
-    height: 450px
+    height: 450px;
 }
 
 .navsquares {
@@ -59,6 +72,11 @@ li {
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
     font-size: larger;
     font-weight: bold;
+    transition: all 1s;
+}
+
+#about:hover {
+    box-shadow: inset 0 0 0 1000px rgba(32, 56, 86, 0.7);
 }
 
 #play {
@@ -68,6 +86,11 @@ li {
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
     font-size: larger;
     font-weight: bold;
+    transition: all 1s;
+}
+
+#play:hover {
+    box-shadow: inset 0 0 0 1000px rgba(32, 56, 86, 0.7);
 }
 
 #toys {
@@ -77,6 +100,11 @@ li {
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
     font-size: larger;
     font-weight: bold;
+    transition: all 1s;
+}
+
+#toys:hover {
+    box-shadow: inset 0 0 0 1000px rgba(32, 56, 86, 0.7);
 }
 
 #contact {
@@ -86,6 +114,11 @@ li {
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
     font-size: larger;
     font-weight: bold;
+    transition: all 1s;
+}
+
+#contact:hover {
+    box-shadow: inset 0 0 0 1000px rgba(32, 56, 86, 0.7);
 }
 
 .featured {
@@ -128,7 +161,7 @@ li {
     font-size: smaller;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
     .navsquares {
         margin: 0;
         padding: 0;
@@ -141,9 +174,9 @@ li {
 @media(max-width: 800px) {
     .nav {
         overflow: hidden;
-        position: sticky;
+        position: fixed;
         opacity: .9;
-        width: auto;
+        width: 100%;
         top: 0;
         margin: 0;
         padding: .5rem;
@@ -153,10 +186,9 @@ li {
         list-style: none;
         background: #5E8FAD;
         color: white;
-        
     }
 
-    #nav {
+    .nav {
         font-weight: bold;
     }
 
@@ -170,5 +202,18 @@ li {
         padding: 1rem 3rem 1rem 3rem;
         font-weight: bold;
     }
+
+    ul {
+        transform: translateY(-16em);
+        transition: transform 0.5s;
+    }
+    
+    ul:hover {
+        transform: translateY(0);
+    }
+
+    /* .carousel {
+        height: 500px;
+    } */
     
 }
